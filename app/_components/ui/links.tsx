@@ -1,6 +1,5 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
 const links = [
@@ -24,8 +23,6 @@ const links = [
 ];
 
 export default function Links() {
-    const pathname = usePathname();
-
     return (
         <>
             {links.map((link) => {
