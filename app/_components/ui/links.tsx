@@ -42,7 +42,7 @@ export default function Links() {
 											key={`${link.name}`} 
 											className={`${pathname === link.href ? 'border-b-2 border-b-[#fec4ef] bg-[#333333] px-3 flex space-between gap-2 items-center cursor-pointer' : 'px-3 flex space-between gap-2 items-center cursor-pointer'}`}>
 											<LinkIcon
-												className={`${pathname === link.href ? 'active-link h-5 w-5' : 'h-5 w-5'}`} />
+												className={`${pathname === link.href ? 'active-link h-5 w-5 hidden sm:inline' : 'h-5 w-5 hidden sm:inline'}`} />
 											<Link
 													href={link.href}
 													className={`${pathname === link.href ? 'active-link' : ''}`}
