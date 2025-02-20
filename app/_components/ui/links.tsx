@@ -29,10 +29,12 @@ const links = [
 ];
 
 export default function Links() {
+		const pathname = usePathname();
+
     return (
         <>
-            {links.map((link) => {
-							const pathname = usePathname();
+            {
+							links.map((link) => {
 							const LinkIcon = link.icon;
 
                 return (

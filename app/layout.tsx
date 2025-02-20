@@ -7,10 +7,12 @@ import Links from "./_components/ui/links";
 import beth from '../public/image/beth.png';
 
 const dynapuff = DynaPuff({
+  variable: '--font-dynapuff',
   subsets: ["latin"],
 });
 
 const inter = Inter({
+  variable: '--font-inter',
   subsets: ["latin"],
 });
 
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`${inter.variable } antialiased`}
       >
         <div className="w-100 bg-[#222222] px-4 flex justify-between shadow-md">
           <div className="flex justify-between py-4">
@@ -39,7 +41,7 @@ export default function RootLayout({
               className="rounded-md"
               />
             
-            <div className={`flex pl-2 text-xl/5 items-center logo`}>
+            <div className={`${dynapuff.variable } flex pl-2 text-xl/5 items-center logo`}>
               BETH <br/>
               SWAP
             </div>
