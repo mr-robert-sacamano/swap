@@ -10,5 +10,13 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: DynaPuff, Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-family: DynaPuff;
+}
+
+.active-link {
+  color: #fec4ef;
 }
