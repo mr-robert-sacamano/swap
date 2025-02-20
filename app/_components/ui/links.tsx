@@ -26,8 +26,6 @@ export default function Links() {
     return (
         <>
             {links.map((link) => {
-                const linkIcon = '';
-
                 return (
                     <Link
                         key={link.name}
