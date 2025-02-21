@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ca41c5;
+  --background: #fea2cf;
   --foreground: #fea2cf;
 }
 
@@ -15,6 +15,7 @@ body {
 
 .logo {
   font-family: DynaPuff;
+  color: #fea2cf;
 }
 
 .active-link {

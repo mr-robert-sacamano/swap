@@ -10,7 +10,6 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
 // import { UnsafeBurnerWalletAdapter } from "@solana/wallet-adapter-wallets";
 
-// Default styles that can be overridden by your app
 
 export default function AppWalletProvider({
     children,

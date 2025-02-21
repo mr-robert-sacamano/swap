@@ -11,7 +11,7 @@ import {
 const links = [
     { 
         name: 'Swap',
-        href: '/',
+        href: '/swap',
         icon: ArrowsRightLeftIcon
     }, {
         name: 'Rewards',
@@ -29,27 +29,27 @@ const links = [
 ];
 
 export default function Links() {
-		const pathname = usePathname();
+	const pathname = usePathname();
 
     return (
         <>
             {
-							links.map((link) => {
-							const LinkIcon = link.icon;
+                links.map((link) => {
+                const LinkIcon = link.icon;
 
                 return (
-										<div
-											key={`${link.name}`} 
-											className={`${pathname === link.href ? 'border-b-2 border-b-[#fec4ef] bg-[#333333] px-3 flex space-between gap-2 items-center cursor-pointer' : 'px-3 flex space-between gap-2 items-center cursor-pointer'}`}>
-											<LinkIcon
-												className={`${pathname === link.href ? 'active-link h-5 w-5 hidden sm:inline' : 'h-5 w-5 hidden sm:inline'}`} />
-											<Link
-													href={link.href}
-													className={`${pathname === link.href ? 'active-link' : ''}`}
-											>
-													{link.name}
-											</Link>
-										</div>
+                    <div
+                        key={`${link.name}`} 
+                        className={`${pathname === link.href ? 'border-b-2 border-b-[#fec4ef] bg-[#333333] px-3 flex space-between gap-2 items-center cursor-pointer' : 'px-3 flex space-between gap-2 items-center cursor-pointer'}`}>
+                        <LinkIcon
+                            className={`${pathname === link.href ? 'active-link h-5 w-5 hidden sm:inline' : 'h-5 w-5 hidden sm:inline'}`} />
+                        <Link
+                                href={link.href}
+                                className={`${pathname === link.href ? 'active-link' : ''}`}
+                        >
+                                {link.name}
+                        </Link>
+                    </div>
                 );
             })}
         </>
