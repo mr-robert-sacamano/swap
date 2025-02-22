@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import {
+  ArrowDownCircleIcon,
 	ArrowUpRightIcon
 } from '@heroicons/react/24/outline';
 
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-[#ca41c5]">
-        <div className="max-w-4xl mx-auto p-12 border-[#222222] rounded-lg text-white text-xl font-light">
+        <div className="max-w-4xl mx-auto p-12 border-[#222222] rounded-lg text-white text-xl font-light bg-[#ca41c5]">
           <p><span className="beth-swap">BethSwap</span> represents the next step for the BETH community on Solana—a decentralized exchange (DEX) that blends fun, rewards, and exclusive benefits for BETH holders.</p>
           <br />
           <p>Built on BETH’s memecoin heritage, <span className="beth-swap">BethSwap</span> provides low-fee token swaps, staking rewards, and Club BETH, where holders can interact with one another and the team directly. It’s a platform for swapping, earning, and showing off your BETH tokens.</p>
@@ -17,6 +18,17 @@ export default function Home() {
           <p>BETH began as a meme but grew into a thriving community on Solana. <span className="beth-swap">BethSwap</span> continues that momentum in the decentralized finance (DeFi) space, making it simpler and more rewarding for BETH holders to trade, stake, and interact. <span className="logo">BethSwap</span> is more than just a DEX; it’s where the memecoin culture meets genuine utility and community-driven rewards.</p>          
         </div>                      
       </div>
+
+      <div className="p-6 dynapuff bg-[#00a2ff] text-6xl font-black text-center">
+        BethSwap Tools
+      </div>
+
+      <div className="text-center rounded-full w-fit mx-auto mt-[-24px] bg-[#00a2ff]">
+        <ArrowDownCircleIcon 
+          className="h-10 w-10"  
+        />
+      </div>
+
       <div className="max-w-4xl mx-auto p-12 flex flex-col gap-6 text-[#ca41c5] text-lg">
         <div className="p-12 border-[#ca41c5] border-4 shadow-md rounded-lg">
           <span className="font-bold text-5xl beth-swap-dark">Swap</span><br />Swap boasts efficient and optimized token swaps, ensuring users get the best value through intelligent routing and liquidity aggregation on the Solana blockchain.
