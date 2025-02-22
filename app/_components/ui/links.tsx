@@ -40,12 +40,12 @@ export default function Links() {
                 return (
                     <div
                         key={`${link.name}`} 
-                        className={`${pathname === link.href ? 'border-b-2 border-b-[#fec4ef] bg-[#333333] px-3 flex space-between gap-2 items-center cursor-pointer' : 'px-3 flex space-between gap-2 items-center cursor-pointer'}`}>
+                        className={`${pathname === link.href ? 'link-item-wrapper link-item-wrapper-active' : 'link-item-wrapper'}`}>
                         <LinkIcon
-                            className={`${pathname === link.href ? 'active-link h-5 w-5 hidden sm:inline' : 'h-5 w-5 hidden sm:inline'}`} />
+                            className={`${pathname === link.href ? 'link-icon link-icon-active' : 'link-icon'}`} />
                         <Link
                                 href={link.href}
-                                className={`${pathname === link.href ? 'active-link' : ''}`}
+                                className={`${pathname === link.href ? 'link link-active' : 'link'}`}
                         >
                                 {link.name}
                         </Link>

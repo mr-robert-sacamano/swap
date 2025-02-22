@@ -40,7 +40,7 @@ export default function RootLayout({
         <AppWalletProvider>
           <div className="flex flex-col min-h-screen">
             <header
-              className="sticky top-0 w-100 bg-[#222222] pl-4 flex justify-between shadow-md">
+              className="header">
               <Link
                 href="/">
               <div className="flex justify-between py-4">
@@ -49,17 +49,17 @@ export default function RootLayout({
                   src={beth.src}
                   width={48}
                   height={48}
-                  className="rounded-md w-[32px] h-[32px] sm:w-[48px] sm:h-[48px]"
+                  className="logo-img"
                   />
                 
-                <div className={`${dynapuff.variable } flex pl-1 sm:pl-2 text-sm/4 sm:text-xl/5 items-center logo`}>
+                <div className={`logo-text beth-swap`}>
                   BETH <br/>
                   SWAP
                 </div>
               </div>
               </Link>
 
-              <div className={`flex items-center items-stretch text-xs sm:text-2xl font-medium text-[#666666]`}>
+              <div className={`link-wrapper`}>
                 <Links />
               </div>
             </header>
@@ -70,7 +70,7 @@ export default function RootLayout({
                 {children}
               </div>
             </main>
-            <footer className="sticky bottom-0 text-center p-4 text-[#ca41c5] text-lg bg-[#222222]">
+            <footer className="footer">
               <Wallet />
             </footer>
           </div>

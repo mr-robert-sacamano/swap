@@ -4,24 +4,89 @@
 
 :root {
   --background: #fea2cf;
-  --foreground: #fea2cf;
+  --text: #ffffff;
+  --color-pink-light: #fea2cf;
+  --color-pink-dark: #ca41c5;
+  --color-blue: #00a2ff;
+  --font-family-dynapuff: DynaPuff, Arial, Helvetica, sans-serif;  
+  --font-family-inter: Inter, Arial, Helvetica, sans-serif;
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text);
   background: var(--background);
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-.logo {
+/*** Global ***/
+
+.header {
+  @apply sticky top-0 bg-[#222222] pl-4 flex justify-between shadow-md;
+}
+
+.logo-img {
+  @apply rounded-md w-[32px] h-[32px] sm:w-[48px] sm:h-[48px];
+}
+
+.logo-text {
+  @apply flex pl-1 sm:pl-2 text-sm/4 sm:text-xl/5 items-center text-[var(--color-pink-light)];
+}
+
+.beth-swap {
   font-family: DynaPuff;
-  color: #fea2cf;
+  color: var(--color-pink-light);
+}
+
+.beth-swap-dark {
+  font-family: DynaPuff;
+  color: var(--color-pink-dark);
 }
 
 .dynapuff {
   font-family: DynaPuff;
 }
 
-.active-link {
-  color: #fec4ef;
+.link-wrapper {
+  @apply flex items-center items-stretch text-xs sm:text-2xl font-medium text-[#666666];
 }
+
+.link-item-wrapper {
+  @apply px-3 flex items-center cursor-pointer;
+}
+
+.link-item-wrapper-active {
+  @apply border-b-2 border-b-[#fec4ef] bg-[#333333];
+}
+
+.link {
+  @apply px-1 flex gap-2 items-center cursor-pointer;
+}
+
+.link-active {
+  @apply text-[var(--color-pink-light)];
+}
+
+.link-icon {
+  @apply h-5 w-5 hidden sm:inline;
+}
+
+.link-icon-active {
+  @apply text-[var(--color-pink-light)];
+}
+
+.footer {
+  @apply sticky bottom-0 text-center p-4 text-[var(--color-pink-dark)] text-lg bg-[#222222]
+}
+
+
+/*** Page ***/
+
+/* Home */
+
+/* Swap */
+
+/* Rewards */
+
+/* Sweep */
+
+/* Club */
