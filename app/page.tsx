@@ -19,8 +19,8 @@ export default function Home() {
         </div>                      
       </div>
 
-      <div className="p-6 dynapuff bg-[#00a2ff] text-6xl font-black text-center">
-        BethSwap Tools
+      <div className="p-8 dynapuff bg-[#00a2ff] text-2xl sm:text-4xl font-black text-center">
+        The BethSwap Ecosystem
       </div>
 
       <div className="text-center rounded-full w-fit mx-auto mt-[-24px] bg-[#00a2ff]">
@@ -31,8 +31,8 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto p-12 flex flex-col gap-6 text-[#ca41c5] text-lg">
         <div className="p-12 border-[#ca41c5] border-4 shadow-md rounded-lg">
-          <span className="font-bold text-5xl beth-swap-dark">Swap</span><br />Swap boasts efficient and optimized token swaps, ensuring users get the best value through intelligent routing and liquidity aggregation on the Solana blockchain.
-          <div className="mt-3 flex items-center cursor-pointer border-black border-2 text-lg bg-[#00a2ff] dynapuff text-white w-min">
+          <span className="font-bold text-4xl sm:text-5xl beth-swap-dark">Swap</span><br />Swap boasts efficient and optimized token swaps, ensuring users get the best value through intelligent routing and liquidity aggregation on the Solana blockchain.
+          <div className="mt-3 flex items-center cursor-pointer border-black border-2 bg-[#00a2ff] dynapuff text-white w-min">
             <Link
               href="/swap"
               className="flex items-center px-6 py-3"
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className="p-12 border-[#ca41c5] border-4 shadow-md rounded-lg">
-          <span className="font-bold text-5xl beth-swap-dark">Rewards</span><br />The rewards system enable BETH holders to stake their tokens and earn passive income, aligning personal incentives with the ecosystem’s long-term growth.
+          <span className="font-bold text-4xl sm:text-5xl beth-swap-dark">Rewards</span><br />The rewards system enable BETH holders to stake their tokens and earn passive income, aligning personal incentives with the ecosystem’s long-term growth.
           <div className="mt-3 flex items-center cursor-pointer border-black border-2 text-lg bg-[#00a2ff] dynapuff text-white w-min">
             <Link
               href="/rewards"
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         <div className="p-12 border-[#ca41c5] border-4 shadow-md rounded-lg">
-          <span className="font-bold text-5xl beth-swap-dark">Sweep</span><br /> Sweep your dust and unwanted tokens into BETH with BethSweep!
+          <span className="font-bold text-4xl sm:text-5xl beth-swap-dark">Sweep</span><br /> Sweep your dust and unwanted tokens into BETH with BethSweep!
           <div className="mt-3 flex items-center cursor-pointer border-black border-2 text-lg bg-[#00a2ff] dynapuff text-white w-min">
             <Link
               href="/sweep"
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
 
         <div className="p-12 border-[#ca41c5] border-4 shadow-md rounded-lg">
-          <span className="font-bold text-5xl beth-swap-dark">Club</span><br /> Club BETH is an exclusive space for active BETH holders, offering direct access to the community and team insights.
+          <span className="font-bold text-4xl sm:text-5xl beth-swap-dark">Club</span><br /> Club BETH is an exclusive space for active BETH holders, offering direct access to the community and team insights.
           <div className="mt-3 flex items-center cursor-pointer border-black border-2 text-lg bg-[#00a2ff] dynapuff text-white w-min">
             <Link
               href="/club"
