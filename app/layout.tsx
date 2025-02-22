@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { DynaPuff, Inter } from "next/font/google";
 import Image from 'next/image';
 import Link from 'next/link';
 import AppWalletProvider from "./_components/other/AppWalletProvider";
@@ -10,17 +9,6 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import Links from "./_components/ui/links";
 import Wallet from "./_components/ui/wallet";
 import beth from '../public/image/beth.png';
-
-
-const dynapuff = DynaPuff({
-  variable: '--font-dynapuff',
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "BethSwap",
@@ -35,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable } antialiased`}
+        className={`antialiased`}
       >
         <AppWalletProvider>
           <div className="flex flex-col min-h-screen">
