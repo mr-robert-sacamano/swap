@@ -18,6 +18,10 @@ body {
   color: #fea2cf;
 }
 
+.dynapuff {
+  font-family: DynaPuff;
+}
+
 .active-link {
   color: #fec4ef;
 }
